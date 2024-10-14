@@ -18,7 +18,21 @@ public class Main {
         System.out.println(a2.maxSum(new int[]{4,8,3,10,17}));
         System.out.println(a2.minSum(new int[]{4,8,3,10,17}));
 
+        Aufgabe3 a3 = new Aufgabe3();
+        System.out.println("\n\nAufgabe3");
+        int[] array1 = new int[]{1, 3, 0,0,0,0,0,0,0};
+            int[] array2 = new int[] {8,7,0,0,0,0,0,0,0};
+            System.out.println(Arrays.toString(a3.sumBigNumbers(array1, array2)));
+            array1 = new int []{8, 3, 0,0,0,0,0,0,0};
+            array2 = new int[]{5, 4,0,0,0,0,0,0,0};
+            System.out.println(Arrays. toString(a3.diffBigNumbers(array1, array2)));
+            array1 = new int[] {2,3,6,0,0,0,0,0,0};
+            int x = 2;
+            System.out.println(Arrays. toString(a3.mulBigNumbers(array1, x)));
+            System.out.println(Arrays. toString(a3. divide(array1, x)));
 
+
+            System.out.println("\nAufgabe 4");
 
 
         }
