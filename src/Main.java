@@ -11,6 +11,15 @@ public class Main {
         System.out.println(Arrays.toString(a1.roundedGrades(new int[]{29,37,38,41,84,67})));
         System.out.println(a1.maxRound (new int[]{29,37,38,41,84,67}));
 
+        System.out.println("\nAufgabe 2");
+        Aufgabe2 a2 = new Aufgabe2();
+        System.out.println(a2.getMax(new int[]{4,8,3,10,17}));
+        System.out.println(a2.getMin(new int[]{4,8,3,10,17}));
+        System.out.println(a2.maxSum(new int[]{4,8,3,10,17}));
+        System.out.println(a2.minSum(new int[]{4,8,3,10,17}));
+
+
+
 
         }
 }
