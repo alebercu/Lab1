@@ -23,7 +23,9 @@ public class Aufgabe1 {
         return Arrays.stream(grades).map(this::howToRound).toArray();
     }
 
-
-
+    public int maxRound(int[] grades) {
+        int[] rounded = roundedGrades(grades);
+        return Arrays.stream(rounded).max().getAsInt();
+    }
 
 }
