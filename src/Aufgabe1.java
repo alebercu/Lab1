@@ -1,4 +1,4 @@
-import java.util.Arrays
+import java.util.Arrays;
 
 public class Aufgabe1 {
     public int[] failedGrades(int[] grades) {
