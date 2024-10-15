@@ -33,6 +33,11 @@ public class Main {
 
 
             System.out.println("\nAufgabe 4");
+            Aufgabe4 a4 = new Aufgabe4();
+            System.out.println(a4.cheapest(new int[]{40, 35, 70, 15, 45}));
+            System.out.println(a4.mostExpensive(new int[]{15, 20, 10, 35}, new int[]{20, 15, 40, 15}));
+            System.out.println(a4.mostExpensiveInBudget(new int[]{15, 45, 20}, 30));
+            System.out.println(a4.maxToBuy(new int[]{40, 50, 60}, new int[]{8, 12}, 60));
 
 
         }
