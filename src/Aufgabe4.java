@@ -23,6 +23,23 @@ public class Aufgabe4 {
             return maxPrice;
         }
 
+    public int maxToBuy(int[] pricesT, int[] pricesU, int budget){
+        int maxBought = -1;
+
+        for(int priceT : pricesT){
+            for(int priceU : pricesU){
+                int sum = priceT + priceU;
+
+                if(sum <= budget && sum > maxBought){
+                    maxBought = sum;
+                }
+            }
+
+        }
+    return maxBought;
+
+    }
+
 }
 
 
