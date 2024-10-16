@@ -9,14 +9,15 @@ public class Main {
         System.out.println(Arrays.toString(a1.failedGrades(new int[]{29,37,38,41,84,67})));
         System.out.printf("%.2f\n", a1.averageGrade(new int[]{29,37,38,41,84,67}));
         System.out.println(Arrays.toString(a1.roundedGrades(new int[]{29,37,38,41,84,67})));
+        System.out.println(Arrays.toString(a1.failedGrades(a1.roundedGrades(new int[]{29, 37, 38, 41, 84, 67}))));
         System.out.println(a1.maxRound (new int[]{29,37,38,41,84,67}));
 
         System.out.println("\nAufgabe 2");
         Aufgabe2 a2 = new Aufgabe2();
         System.out.println(a2.getMax(new int[]{4,8,3,10,17}));
         System.out.println(a2.getMin(new int[]{4,8,3,10,17}));
-        System.out.println(a2.maxSum(new int[]{4,8,3,10,17}));
-        System.out.println(a2.minSum(new int[]{4,8,3,10,17}));
+        System.out.println(a2.maxSum(new int[]{-4,8,3,10,17}));
+        System.out.println(a2.minSum(new int[]{-4,8,3,10,17}));
 
         Aufgabe3 a3 = new Aufgabe3();
         System.out.println("\n\nAufgabe3");
@@ -27,7 +28,7 @@ public class Main {
             array2 = new int[]{5, 4,0,0,0,0,0,0,0};
             System.out.println(Arrays. toString(a3.diffBigNumbers(array1, array2)));
             array1 = new int[] {2,3,6,0,0,0,0,0,0};
-            int x = 2;
+            int x = 1;
             System.out.println(Arrays. toString(a3.mulBigNumbers(array1, x)));
             System.out.println(Arrays. toString(a3. divide(array1, x)));
 
@@ -38,6 +39,8 @@ public class Main {
             System.out.println(a4.mostExpensive(new int[]{15, 20, 10, 35}, new int[]{20, 15, 40, 15}));
             System.out.println(a4.mostExpensiveInBudget(new int[]{15, 45, 20}, 30));
             System.out.println(a4.maxToBuy(new int[]{40, 50, 60}, new int[]{8, 12}, 60));
+        System.out.println(a4.maxToBuy(new int[]{60}, new int[]{8, 12}, 60));
+        System.out.println(a4.maxToBuy(new int[]{40, 60}, new int[]{8, 12}, 60));
 
 
         }
