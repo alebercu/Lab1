@@ -43,14 +43,36 @@ public class Aufgabe1 {
         }
         return grade;
     }
+//
+////    public int[] roundedGrades(int[] grades) {
+////        return Arrays.stream(grades).map(this::howToRound).toArray();
+////    }
 
     public int[] roundedGrades(int[] grades) {
-        return Arrays.stream(grades).map(this::howToRound).toArray();
-    }
+        int[] roundedGradess = new int[grades.length];
+            for (int i = 0; i < grades.length; i++) {
+                roundedGradess[i] = howToRound(grades[i]);
+            }
+        return roundedGradess;
+
+        }
+//    public int maxRound(int[] grades) {
+//        int[] rounded = roundedGrades(grades);
+//        return Arrays.stream(rounded).max().getAsInt();
+//    }
 
     public int maxRound(int[] grades) {
         int[] rounded = roundedGrades(grades);
-        return Arrays.stream(rounded).max().getAsInt();
-    }
+        int max = rounded[0];
 
+        for (int i = 1; i < rounded.length; i++) {
+            if (rounded[i] > max) {
+                max = rounded[i];
+            }
+        }
+        return max;
+    }
 }
+
+
+
